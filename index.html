@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./estilos/miEstilo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1>Titulo de nuestro unicornio</h1>
+        <header>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#news">News</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </header>
+        <section class="productos">
+            <div class="columna">
+                <h3>Producto 1</h3>
+                <p>Cortado en jarrito con leche comun y café torrado</p>
+                <p> $150</p>
+                <div class="contenedor-boton">
+                    <a href="./productos.html" class="boton">Compra el producto</a>
+                </div>
+            </div>
+            <div class="columna">
+                <h3>Producto 2</h3>
+                <img src="./imagenes/helicoptero.jpeg">
+                <a href="./productos.html" class="boton">
+                <div class="contenedor-boton" id="producto-especial">
+                   <p > Compra el producto</p>
+                </div>
+                </a>
+            </div>
+            <div class="columna">
+                <h3>Producto 3</h3>
+                <img src="./imagenes/masserati.jpeg">
+                <div class="contenedor-boton">
+                    <a href="./productos.html" class="boton">Compra el producto</a>
+                </div>
+            </div>
+        </section>
+        <section class="productos">
+            <div class="columna-mitad">
+                <h3>Producto 1</h3>
+                <img src="./imagenes/barco.jpg">
+                <div class="contenedor-boton">
+                    <a href="./productos.html" class="boton">Compra el producto</a>
+                </div>
+            </div>
+            <div class="columna-mitad">
+                <h3>Producto 2</h3>
+                <img src="./imagenes/helicoptero.jpeg">
+                <a href="./productos.html" class="boton">
+                <div class="contenedor-boton" id="producto-especial">
+                   <p > Compra el producto</p>
+                </div>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <p>Copyright Materiales y Procesos I</p>
+        </footer>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </body>
+</html>
